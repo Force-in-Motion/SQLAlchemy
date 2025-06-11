@@ -1,4 +1,4 @@
 
 DB_URL = {
-'postgresql':'postgresql+psycopg2://postgres_user:postgress_pass@localhost:8632/sqlalchemy_course'
+'postgresql':'postgresql+psycopg2://gsa:0502@localhost:8080/PostgreSQL'
 }

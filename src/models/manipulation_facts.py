@@ -1,5 +1,5 @@
 from src.models.base import Base
-from sqlalchemy import Column, Integer, String, Boolean, DateTime
+from sqlalchemy import Column, Integer, Boolean, DateTime, Text
 
 
 class ManipulationFacts(Base):
@@ -15,4 +15,4 @@ class ManipulationFacts(Base):
     is_planned = Column(Boolean, default=True)
     begin_time = Column(DateTime, nullable=False)
     end_time = Column(DateTime, nullable=True)
-    result = Column(String, nullable=True)
+    result = Column(Text, nullable=True)
