@@ -9,7 +9,7 @@ class Pets(Base):
 
     __tablename__ = 'pets'
 
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     species = Column(Integer, nullable=True)
     owner_id = Column(Integer, nullable=True)
     name = Column(String, nullable=False)

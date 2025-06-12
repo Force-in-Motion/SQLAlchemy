@@ -7,7 +7,7 @@ class Owners(Base):
 
     __tablename__ = 'owners'
 
-    owner_id = Column(Integer, primary_key=True)
+    owner_id = Column(Integer, primary_key=True, autoincrement=True)
     owner_name = Column(String, nullable=False)
     owner_phone = Column(String, nullable=True)
     owner_email = Column(String, nullable=True)

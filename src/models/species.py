@@ -7,6 +7,6 @@ class Species(Base):
 
     __tablename__ = 'species'
 
-    species_id = Column(Integer, primary_key=True)
+    species_id = Column(Integer, primary_key=True, autoincrement=True)
     species_name = Column(String, nullable=False)
 
