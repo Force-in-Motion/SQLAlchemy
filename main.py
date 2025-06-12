@@ -98,6 +98,7 @@ with Session(engine) as session:
     request = select(Owners.owner_id, Owners.owner_name)
     print('request:', request)
 
-    for row in session.execute(request):
+    response = session.execute(request)
 
-        print(row)
+for row in response:
+    print(row)
