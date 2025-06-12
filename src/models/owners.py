@@ -11,3 +11,5 @@ class Owners(Base):
     owner_name = Column(String, nullable=False)
     owner_phone = Column(String, nullable=True)
     owner_email = Column(String, nullable=True)
+
+
