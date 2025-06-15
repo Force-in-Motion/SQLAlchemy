@@ -52,7 +52,6 @@
 # Rev: 5ccc47b906cf (head)
 # Parent: <base>
 # Path: C:\SQLAlchemy_course\alembic\postgresql\versions\5ccc47b906cf_initial_migration.py
-
 #     initial migration
 
 #     Revision ID: 5ccc47b906cf
@@ -61,7 +60,6 @@
 
 
 # Управление зависимостями между миграциями
-
 # В примере выше указана ревизия миграции и её предок:
 
 # Rev: 5ccc47b906cf (head)
