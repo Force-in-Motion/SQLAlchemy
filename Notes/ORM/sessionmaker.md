@@ -105,7 +105,7 @@ session.close()
 - **JOIN-ы и `relationship`**: Ты упоминал JOIN-ы и `relationship`. Сессия, созданная через `sessionmaker`, позволяет использовать `relationship` для автоматических JOIN-ов:
   ```python
   owner = session.query(Owner).first()
-  pets = owner.pets  # Использует relationship
+  pets = owner.pets  # Использует relationship.md
   ```
 - **Агрегатные функции**: Для подсчёта, например, количества питомцев у владельца:
   ```python

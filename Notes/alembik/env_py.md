@@ -283,3 +283,17 @@ if context.is_offline_mode():
 else:
     run_migrations_online()
 ```
+
+Для того что алембик использовал тот же адрес к базе что и SQLAlchemy нам нужно в этом файле прописать команду - 
+
+```
+config.set_main_option("sqlalchemy.url", db_settings.db_url)
+```
+
+теперь в alembic.ini в строке
+
+```
+sqlalchemy.url = driver://user:pass@localhost/dbname
+```
+
+ничего указывать не нужно, адрес к базе данных будет браться всегда по умолчанию из настрок, описанных нами в классе, наследуемом от BaseSettings (pydantic)
